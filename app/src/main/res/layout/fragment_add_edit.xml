@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:useDefaultMargins="true"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/titleEditText"
+            android:hint="@string/hint_jobtitle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/employerEditText"
+            android:hint="@string/hint_employer"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/agencyEditText"
+            android:hint="@string/hint_agency"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/agentEditText"
+            android:hint="@string/hint_agent"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/phoneEditText"
+            android:hint="@string/hint_phone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailEditText"
+            android:hint="@string/hint_email"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:useDefaultMargins="true"
+            android:weightSum="3">
+
+            <TextView
+                android:text="@string/select_job_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/lblJobType"
+                android:textSize="18sp"
+                android:paddingLeft="10dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/spnJobType" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:useDefaultMargins="true"
+            android:weightSum="3">
+
+            <TextView
+                android:text="@string/select_inreview_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/lblStages"
+                android:textSize="18sp"
+                android:paddingLeft="10dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/spnStages" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:useDefaultMargins="true"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_height="42dp"
+                android:inputType="text|datetime|date|time"
+                android:hint="@string/hint_set_interview_date"
+                android:layout_weight="2"
+                android:id="@+id/interviewDateEditText"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="3dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnInterviewDate"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_menu_my_calendar" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnInterviewTime"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_menu_recent_history" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:useDefaultMargins="true"
+            android:layout_weight="4">
+            <TextView
+                android:text="@string/job_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:id="@+id/lblJobSpec"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:id="@+id/btnBrowse"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:layout_row="7"
+                android:src="@drawable/file_no_icon"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

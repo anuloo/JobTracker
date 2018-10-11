@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Job Application Tracker</string>
+    <string name="menuitem_edit">Edit</string>
+    <string name="menuitem_save">Save</string>
+    <string name="menuitem_open_doc">Open</string>
+    <string name="menuitem_delete">Delete</string>
+    <string name="hint_jobtitle">Job Title (Required)</string>
+    <string name="hint_employer">Employer Name</string>
+    <string name="hint_agency">Agency Name</string>
+    <string name="hint_agent">Contact Name</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_set_interview_date">Set Interview Date</string>
+    <string name="btn_set_interview_date">Set Date</string>
+    <string name="label_jobtitle">Job title:</string>
+    <string name="label_employer">Employer:</string>
+    <string name="label_agency">Agency:</string>
+    <string name="label_agent">Contact:</string>
+    <string name="label_phone">Phone:</string>
+    <string name="label_email">Email:</string>
+    <string name="label_interview">Interview:</string>
+    <string name="label_interview_date">Interview date:</string>
+    <string name="label_jobspec">Job spec:</string>
+    <string name="job_spec">Job spec:</string>
+    <string name="btn_browse">Browse</string>
+    <string name="btn_view_doc">View</string>
+    <string name="no_jobs">No job application</string>
+    <string name="ok">OK</string>
+    <string name="confirm_title">Are You Sure?</string>
+    <string name="confirm_message">This will permanently delete the job</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
+    <string name="error_message">You must enter a job title</string>
+    <string name="error_email">Invalid email address!</string>
+    <string name="select_inreview_type">Interview type:</string>
+    <string name="select_job_type">Job type:</string>
+    <string-array name="interview_types">
+        <item>None</item>
+        <item>Just applied</item>
+        <item>Phone interview</item>
+        <item>Skype interview</item>
+        <item>Technical test</item>
+        <item>Face to face interview</item>
+        <item>Stage 1</item>
+        <item>Stage 2</item>
+        <item>Stage 3</item>
+    </string-array>
+    <string-array name="job_types">
+        <item>Full time</item>
+        <item>Contract</item>
+        <item>Temp</item>
+    </string-array>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ff2233"
+    android:orientation="horizontal"
+    android:padding="2dip" >
+
+
+    <!-- Job title-->
+    <TextView
+        android:id="@+id/text_jobtitle"
+        android:layout_height="wrap_content"
+        android:text="Job Title comes here"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:paddingLeft="1dp" />
+
+    <!-- Employer name -->
+    <TextView
+        android:id="@+id/text_employer"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_jobtitle"
+        android:textColor="#343434"
+        android:textSize="13dip"
+        android:layout_marginTop="1dip"
+        android:text="Employer name"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="1dp" />
+
+
+    <TextView android:layout_width="wrap_content"
+        android:id="@+id/text_date"
+        android:layout_height="wrap_content"
+        android:text="2016-10-31 00:29:28"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:layout_marginRight="5dp" />
+
+</RelativeLayout>
